@@ -6,10 +6,12 @@
       when: ansible_pkg_mgr == 'apt'
       apt:
         update_cache: yes
+        become: yes
 
     - name: Upgrade packages with apt
       when: ansible_pkg_mgr == 'apt'
       apt:
         upgrade: dist
+        become: yes
 
 
