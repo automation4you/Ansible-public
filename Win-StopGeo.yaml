@@ -3,10 +3,10 @@
 
   tasks: 
 
-   - name: Stop service Tomcat
+   - name: Stop service TimeBrokerSvc
 
      win_service:
 
-       name: Tomcat8
+       name: TimeBrokerSvc
 
        state: stopped
