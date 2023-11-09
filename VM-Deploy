@@ -13,6 +13,6 @@
       name: testvm_2
       template: WINOS
       datacenter: Datacenter
-      folder: /Datacenter/deploy
+      folder: deploy
       state: poweredon
       wait_for_ip_address: no
