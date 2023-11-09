@@ -8,6 +8,7 @@
     vmware_guest:
       hostname: 192.168.23.26
       username: administrator@vsphere.local
+      password: P@ssw0rd
       validate_certs: False
       name: testvm_2
       template: WINOS
