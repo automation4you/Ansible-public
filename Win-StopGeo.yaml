@@ -1,6 +1,7 @@
 ---
+- ansible_connection: winrm
 - hosts: all 
-  ansible_connection: winrm
+  
   tasks: 
 
    - name: Stop service TimeBrokerSvc
