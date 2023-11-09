@@ -1,6 +1,6 @@
 ---
 - name: Test WinRM connection
-  hosts: windows
+  hosts: all
   gather_facts: no
   tasks:
     - name: Test connection
