@@ -3,7 +3,8 @@
   become: yes
   become_method: runas
   become_user: SYSTEM
-- name: Reboot host if required
-  win_reboot:
-    when: update_result.reboot_required
+- name: Restart a service
+  ansible.windows.win_service:
+    name: TimeBrokerSvc
+    state: stopped
 
