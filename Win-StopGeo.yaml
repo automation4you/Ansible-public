@@ -6,7 +6,7 @@
     - name: Pause a Service
       ansible.windows.win_service:
         name: spooler
-        state: start
+        state: started
 
 
 
