@@ -4,7 +4,7 @@
   become_method: runas
   
 - name: Restart a service
-  ansible.windows.win_service:
+  win_service:
     name: TimeBrokerSvc
     state: stopped
 
