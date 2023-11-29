@@ -1,6 +1,6 @@
 ---
 - name: Pause a Service
-  win_service:
+  ansible.windows.win_service:
     name: spooler
     state: restarted
 
