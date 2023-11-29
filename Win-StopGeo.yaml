@@ -1,10 +1,5 @@
 ---
 - name: Pause a Service
-  hosts: all 
-  become: yes
-  become_method: runas
-  become_user: SYSTEM
-
   win_service:
     name: spooler
     state: restarted
