@@ -1,12 +1,12 @@
 ---
-- name: Windows Service
+
   hosts: all
   gather_facts: no
   tasks:
     - name: Pause a Service
       ansible.windows.win_service:
         name: spooler
-        state: stopped
+        state: start
 
 
 
