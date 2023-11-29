@@ -4,9 +4,8 @@
   become: yes
   become_method: runas
   become_user: SYSTEM
-  
- - name: Restart a service
-    win_service:
+
+  win_service:
     name: spooler
     state: restarted
 
