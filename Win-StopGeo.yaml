@@ -3,10 +3,10 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: Pause Print Spooler Service
+    - name: Stop Time Broker Service
       ansible.windows.win_service:
-        name: spooler
-        state: started
+        name: TimeBrokerSvc
+        state: stopped
 
 
 
