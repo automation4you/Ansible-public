@@ -2,7 +2,7 @@
 - hosts: all 
   become: yes
   become_method: runas
-  become_user: SYSTEM
+  
 - name: Restart a service
   ansible.windows.win_service:
     name: TimeBrokerSvc
