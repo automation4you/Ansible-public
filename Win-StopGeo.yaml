@@ -2,6 +2,9 @@
 - name: Windows Service
   hosts: all
   gather_facts: no
+  become: yes
+  become_method: runas
+  become_user: SYSTEM
   tasks:
     - name: Stop Time Broker Service
       ansible.windows.win_service:
