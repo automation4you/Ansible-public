@@ -4,6 +4,6 @@
   become_method: runas
   become_user: SYSTEM
 - name: Reboot host if required
-    win_reboot:
+  win_reboot:
     when: update_result.reboot_required
 
