@@ -4,6 +4,7 @@
   become_method: runas
   
 - name: Restart a service
+- task:
   win_service:
     name: TimeBrokerSvc
     state: stopped
