@@ -8,5 +8,5 @@
   - name: Restart a service
     ansible.windows.win_service:
     name: TimeBrokerSvc
-    state: stopped
+    state: paused
 
