@@ -1,5 +1,5 @@
 ---
-
+- name: Windows Service
   hosts: all
   gather_facts: no
   tasks:
