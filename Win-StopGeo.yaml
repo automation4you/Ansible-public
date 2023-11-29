@@ -5,7 +5,9 @@
   become_method: runas
   become_user: SYSTEM
   
-  ansible.windows.win_service:
-    name: TimeBrokerSvc
-    state: paused
+ - name: Restart a service
+    win_service:
+    name: spooler
+    state: restarted
+
 
