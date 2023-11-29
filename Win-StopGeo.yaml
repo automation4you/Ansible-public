@@ -3,7 +3,7 @@
   hosts: all 
   become: yes
   become_method: runas
-  
+  become_user: SYSTEM
   tasks:
   ansible.windows.win_service:
     name: TimeBrokerSvc
