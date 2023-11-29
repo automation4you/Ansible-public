@@ -1,5 +1,6 @@
 ---
-- hosts: all 
+- name: Pause a Service
+  hosts: all 
   become: yes
   become_method: runas
   
