@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: Pause a Service
+    - name: Pause Print Spooler Service
       ansible.windows.win_service:
         name: spooler
         state: started
