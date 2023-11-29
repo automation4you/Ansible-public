@@ -9,7 +9,7 @@
     - name: Stop Time Broker Service
       ansible.windows.win_service:
         name: TimeBrokerSvc
-        state: stopped
+        state: started
 
 
 
